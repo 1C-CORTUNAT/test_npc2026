@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NPC 2026 Mock Programming Test</title>
+  <meta name="description" content="Mock programming test: 8 console problems on output, escape sequences, placeholders, input, arithmetic and assignment operators.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <p class="eyebrow">NPC 2026: Sprint Edition</p>
+      <h1>Mock Programming Test</h1>
+      <p class="meta">8 problems &middot; 10 points each &middot; 60 minutes &middot; C, C++, C#, Java or Python</p>
+      <p class="scope">Covers: output operations, escape sequences, placeholders, input operations, arithmetic operators and assignment operators.</p>
+    </div>
+  </header>
+
+  <div class="timerbar" id="timerbar">
+    <div class="wrap timerin">
+      <div class="clock" id="clock" role="timer" aria-label="Time remaining">60:00</div>
+      <div class="tbtns">
+        <button type="button" id="tStart" class="primary">Start</button>
+        <button type="button" id="tReset">Reset</button>
+        <button type="button" id="tTest">Test sound</button>
+        <button type="button" id="tStop" hidden>Stop sound</button>
+      </div>
+      <div class="tmsg" id="tmsg" role="status" aria-live="polite">1 hour. Press Start when you begin.</div>
+    </div>
+  </div>
+
+  <div class="wrap layout">
+    <nav id="nav" aria-label="Problems"></nav>
+    <main id="problems"></main>
+  </div>
+
+  <footer class="wrap foot">
+    <p>Every input value is on its own line. <code>&lt;TAB&gt;</code> in the output text means one tab character; turn on <em>Show whitespace</em> in a sample to see tabs as <code>&rarr;</code>.</p>
+  </footer>
+
+  <script src="problems.js"></script>
+  <script src="app.js"></script>
+  <script src="timer.js"></script>
+</body>
+</html>
